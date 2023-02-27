@@ -1,0 +1,765 @@
+@font-face {
+  font-family: "GT-Walsheim-Pro-Bold";
+  src: url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.eot?#iefix") format("embedded-opentype"), url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.woff2") format("woff2"), url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.woff") format("woff"), url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Bold.ttf") format("truetype");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: "GT-Walsheim-Pro-Regular";
+  src: url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.eot?#iefix") format("embedded-opentype"), url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.woff2") format("woff2"), url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.woff") format("woff"), url("https://fernando10bet.github.io/fonts/gt-walsheim/GT-Walsheim-Pro-Regular.ttf") format("truetype");
+  /* Legacy iOS */
+}
+* {
+  font-family: "GT-Walsheim-Pro-Regular";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-image: url(./assets/header/bg.png) !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@keyframes boton {
+  0% {
+    top: 100vh;
+  }
+  100% {
+    top: calc(100vh - 6rem);
+  }
+}
+.btn_join {
+  position: fixed;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: calc(100vh - 6rem);
+  left: 0%;
+  height: 6rem;
+  display: none;
+  z-index: 99;
+  animation: boton 0.5s;
+}
+.btn_join a {
+  text-decoration: none;
+  font-size: 37px;
+  color: #3ae67a;
+  background-color: #191919;
+  font-weight: bold;
+  padding: 0.4em 1.2em;
+  border-radius: 10px;
+}
+.btn_join:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.landing-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+}
+.landing-header #movilHeader {
+  display: none;
+}
+.landing-header .header-bg {
+  background-size: 75% 40%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: calc(100vh - 8rem);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-height: 700px) {
+  .landing-header .header-bg {
+    height: 50rem;
+  }
+}
+.landing-header .btn-ingresa {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1em;
+}
+.landing-header .btn-ingresa a {
+  font-family: "GT-Walsheim-Pro-Bold";
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 28px;
+}
+.landing-header .header-content {
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 40%;
+  height: 100%;
+}
+.landing-header .header-content .bgHeader {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 95%;
+  background-image: url(./assets/header/casino3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 80% bottom;
+}
+.landing-header .header-content div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.landing-header .header-content div:first-of-type figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-bottom: 2rem;
+}
+.landing-header .header-content div:first-of-type figure img {
+  width: 80px;
+  height: 80px;
+}
+.landing-header .header-content div:first-of-type figure figcaption {
+  font-weight: bold;
+  font-size: 18px;
+}
+.landing-header .header-content div:first-of-type h2 {
+  font-family: "GT-Walsheim-Pro-Bold";
+  font-size: 20px;
+  font-weight: bold;
+  font-weight: bold;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*                 &:after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      background-color: $green;
+      border: 1px solid $green;
+  } */
+}
+.landing-header .header-content div:first-of-type h1 {
+  font-family: "GT-Walsheim-Pro-Bold";
+  font-size: 35px;
+  color: #ffffff;
+}
+.landing-header .header-content div:first-of-type a {
+  margin-top: 2rem;
+  text-decoration: none;
+  background-color: #3ae67a;
+  padding: 10px 40px;
+  color: #4e454a;
+  border-radius: 10px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.landing-header .header-content div:last-of-type p {
+  font-size: 12px;
+  color: #ffffff;
+}
+.landing-header #dados,
+.landing-header #ficha,
+.landing-header #ficha2 {
+  position: absolute;
+  clear: both;
+}
+.landing-header #dados {
+  left: 72%;
+  top: 60vh;
+}
+.landing-header #ficha {
+  width: 15%;
+  left: 60%;
+  top: 82vh;
+}
+.landing-header #ficha2 {
+  width: 320px;
+  left: 25%;
+  top: 60%;
+}
+
+.main-landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 97%;
+  height: auto;
+  box-sizing: border-box;
+}
+.header-steps div {
+  box-sizing: border-box;
+  width: 33.3333333333%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 8rem;
+}
+.header-steps div p {
+  font-family: "GT-Walsheim-Pro-Bold" !important;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+}
+.header-steps div span {
+  font-size: 69px;
+  font-family: "GT-Walsheim-Pro-Bold" !important;
+  font-weight: bold;
+  padding-right: 1rem;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-steps div:nth-of-type(1) {
+  background-color: #ffffff;
+  color: #191919;
+}
+.header-steps div:nth-of-type(2) {
+  background-color: #3ae67a;
+  color: #191919;
+}
+.header-steps div:nth-of-type(2) p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  height: auto !important;
+}
+.header-steps div:nth-of-type(2) p i {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.header-steps div:nth-of-type(3) {
+  background-color: #ffffff;
+  color: #191919;
+}
+
+#casino-imgs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 4em 0em;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+#casino-imgs div {
+  height: 22rem;
+  max-height: 25rem;
+  width: 31%;
+  max-width: 42rem;
+  border-radius: 10px;
+  padding: 1em;
+  box-sizing: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#casino-imgs div figure {
+  box-sizing: border-box;
+}
+#casino-imgs div h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#casino-imgs div:nth-of-type(1) {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  background-image: url(./assets/imgs/1.png);
+  background-position: 40% bottom !important;
+}
+#casino-imgs div:nth-of-type(1) figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#casino-imgs div:nth-of-type(1) figure img {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  max-width: 20rem;
+}
+#casino-imgs div:nth-of-type(1) h4 {
+  text-align: center;
+}
+#casino-imgs div:nth-of-type(1) h4:first-of-type {
+  color: #191919;
+}
+#casino-imgs div:nth-of-type(1) h4:last-of-type {
+  color: #3ae67a;
+}
+#casino-imgs div:nth-of-type(2) {
+  background-color: #3ae67a;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  background-image: url(./assets/imgs/2.png);
+  background-position: 40% bottom !important;
+}
+#casino-imgs div:nth-of-type(2) figure {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+}
+#casino-imgs div:nth-of-type(2) figure img {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  width: 80%;
+  height: 100%;
+  max-width: 20rem;
+}
+#casino-imgs div:nth-of-type(2) h4 {
+  max-width: 40%;
+}
+#casino-imgs div:nth-of-type(3) {
+  background-color: #ffffff;
+  color: #191919;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  background-image: url(./assets/imgs/3.png);
+  background-size: 55%;
+  background-position: center 80% !important;
+}
+#casino-imgs div:nth-of-type(3) figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#casino-imgs div:nth-of-type(3) figure img {
+  position: absolute;
+  bottom: -8%;
+  width: 85%;
+  height: 95%;
+  max-width: 24rem;
+}
+#casino-imgs div:nth-of-type(3) h4 {
+  width: 100%;
+  text-align: center;
+}
+#casino-imgs .payments-imgs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  margin-top: 1em;
+  flex-wrap: wrap;
+  border-top: 1.5px solid #191919;
+  padding-top: 1rem;
+}
+#casino-imgs .payments-imgs figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 3.8rem;
+  padding: 0.2em;
+}
+#casino-imgs .payments-imgs figure img {
+  width: 100%;
+  height: 100%;
+}
+
+#casino-terms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  padding: 2em 1em;
+  margin-bottom: 5rem;
+}
+#casino-terms h2 {
+  align-self: flex-start;
+  margin-bottom: 2em;
+  font-size: 12px;
+  color: #ffffff;
+}
+#casino-terms ol {
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1em;
+}
+#casino-terms ol li {
+  line-height: 1.5em;
+  text-align: justify;
+  text-justify: auto;
+  font-size: 12px;
+  color: #ffffff;
+}
+#casino-terms ol li ol,
+#casino-terms ol li ul {
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 1em 0em 1em 2em;
+}
+#casino-terms .segob {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+#casino-terms .segob figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#casino-terms .segob figure img {
+  width: 15%;
+}
+#casino-terms p:last-of-type {
+  align-self: flex-start;
+  font-size: 12px;
+  margin-top: 2rem;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1750px) {
+  .bgHeader {
+    background-position: 65% bottom !important;
+  }
+  #casino-imgs div:nth-of-type(3) {
+    background-size: 40%;
+  }
+  .header-content div figure img {
+    width: 110px !important;
+    height: 110px !important;
+  }
+  .header-content div h2 {
+    font-size: 22px !important;
+  }
+  .header-content div h1 {
+    font-size: 42px !important;
+  }
+  .header-content div a {
+    font-size: 40px !important;
+  }
+}
+@media screen and (min-width: 1101px) {
+  .header-content {
+    max-width: 50% !important;
+  }
+  .header-content div:first-of-type figure img {
+    width: 100px;
+    height: 90px;
+  }
+  .header-content div:first-of-type h2 {
+    font-size: 28px;
+  }
+  .header-content div:first-of-type h1 {
+    font-size: 45px;
+  }
+  .header-content div:first-of-type a {
+    font-size: 45px;
+  }
+}
+/* @media screen and (min-width:1600px) {
+    .header-content{
+        div{
+
+            h2{
+                font-size: 28px;
+            }
+            h1{
+                font-size: 45px;
+            }
+            a{
+                font-size: 45px;
+            }
+        }
+    }
+} */
+@media screen and (max-width: 1250px) {
+  .bgHeader {
+    background-size: 55% !important;
+    background-position: right bottom !important;
+  }
+  #casino-imgs {
+    row-gap: 1.5rem;
+  }
+  #casino-imgs div {
+    width: 45%;
+  }
+  #casino-imgs div:nth-of-type(1) {
+    background-position: 90% bottom !important;
+  }
+  #casino-imgs div:nth-of-type(2) {
+    background-position: 100% bottom !important;
+  }
+  #casino-imgs div:nth-of-type(3) {
+    background-size: 40%;
+    background-position: center 75% !important;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .bgHeader {
+    display: none !important;
+  }
+  body {
+    background-image: url(./assets/header/bg.png) !important;
+  }
+  .btn_join a {
+    font-size: 24px !important;
+  }
+  #dados,
+#ficha,
+#ficha2 {
+    display: none !important;
+  }
+  .landing-header {
+    height: auto !important;
+  }
+  .landing-header #movilHeader {
+    display: flex !important;
+    width: 100%;
+    order: 2;
+    margin-top: 0.2em !important;
+    height: 40rem;
+    background-image: url(./assets/header/casino3.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .landing-header .header-bg {
+    background-image: none;
+    height: auto !important;
+  }
+  .landing-header .header-content {
+    width: 100% !important;
+    max-width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1.4em !important;
+    background-image: none !important;
+  }
+  .landing-header .header-content div {
+    width: 100%;
+  }
+  .landing-header .header-content div h2,
+.landing-header .header-content div h1 {
+    text-align: left;
+    width: auto !important;
+    max-width: 90%;
+  }
+  .landing-header .header-content div h2 {
+    font-size: 26px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 28px;
+  }
+  .landing-header .header-content div h1 {
+    font-size: 32px !important;
+    padding: 0 !important;
+    line-height: 36px;
+  }
+  .landing-header .header-content div a {
+    font-size: 32px !important;
+    padding: 4px 20px !important;
+  }
+  .landing-header .header-content div:nth-of-type(1) {
+    order: 1;
+  }
+  .landing-header .header-content div:nth-of-type(1) figure {
+    margin-bottom: 0.5em !important;
+  }
+  .landing-header .header-content div:nth-of-type(1) a {
+    margin-top: 0.8rem !important;
+  }
+  .landing-header .header-content div:nth-of-type(2) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    order: 3;
+    margin-top: 1rem;
+  }
+  .landing-header .btn-ingresa {
+    height: auto !important;
+    align-self: flex-start;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .landing-header .btn-ingresa a {
+    font-size: 20px !important;
+  }
+  .header-steps {
+    height: auto !important;
+    flex-wrap: wrap;
+  }
+  .header-steps div {
+    width: 100% !important;
+    height: 8.3em;
+  }
+  .header-steps div p {
+    width: 85% !important;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .header-steps div span {
+    width: 15% !important;
+    margin-right: 0 !important;
+  }
+  #casino-imgs {
+    padding: 2em 0em !important;
+  }
+  #casino-imgs div {
+    width: 95% !important;
+    margin-bottom: 0.1rem;
+  }
+  .segob figure img {
+    width: 40% !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  #movilHeader {
+    background-size: contain !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .header-steps div {
+    padding: 0 10px !important;
+    column-gap: 10px;
+  }
+  .header-steps div p {
+    justify-content: flex-start !important;
+  }
+  #casino-imgs div:nth-of-type(3) {
+    background-size: 45%;
+    background-position: center 75% !important;
+  }
+  #movilHeader {
+    height: 35rem !important;
+  }
+}
+@media screen and (max-width: 550px) {
+  #movilHeader {
+    height: 25rem !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  #movilHeader {
+    height: 20rem !important;
+  }
+  .landing-header .header-bg {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+  }
+  .landing-header .header-content figure img {
+    width: 100px;
+    height: 70px;
+  }
+  .landing-header .header-content a {
+    padding: 0.6em 1em !important;
+    font-size: 1.8rem;
+  }
+  .landing-header .header-content h2 {
+    font-size: 2rem;
+  }
+  .landing-header .header-content h1 {
+    font-size: 2.2rem;
+  }
+  .landing-header .header-content p {
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+  }
+  .segob {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  .segob figure {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .segob figure img {
+    width: 80% !important;
+  }
+  #casino-imgs div {
+    height: 18rem !important;
+  }
+  .payments-imgs {
+    border-bottom: 1px solid #191919 !important;
+    padding-bottom: 1em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
