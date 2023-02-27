@@ -717,7 +717,7 @@ body {
   .landing-header #movilHeader {
     display: flex !important;
     width: 100%;
-    order: 2;
+    order: 3;
     margin-top: 0.2em !important;
     height: 30rem;
     background-image: url(./assets/header/Elementos-Banners-Landing-Sport.png);
@@ -774,7 +774,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    order: 3;
+    order: 2;
     margin-top: 1rem;
   }
   .landing-header .btn-ingresa {
